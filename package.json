@@ -1,0 +1,16 @@
+{
+  "name": "trade-dialer-docs",
+  "version": "1.0.0",
+  "description": "Documentation for Trade Dialer - Global Stock Market Tracker",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": ["trade-dialer", "stock-market", "documentation"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

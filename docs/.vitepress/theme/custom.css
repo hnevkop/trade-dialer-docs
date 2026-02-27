@@ -1,0 +1,113 @@
+/* JetBrains Mono as primary font */
+:root {
+  --vp-font-family-base: 'JetBrains Mono', monospace;
+  --vp-font-family-mono: 'JetBrains Mono', monospace;
+
+  /* Trade Dialer brand colors */
+  --vp-c-brand-1: #3b82f6;
+  --vp-c-brand-2: #2563eb;
+  --vp-c-brand-3: #1d4ed8;
+
+  /* Softer backgrounds */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-soft: #f8fafc;
+  --vp-c-bg-mute: #f1f5f9;
+}
+
+.dark {
+  --vp-c-bg: #0f0f0f;
+  --vp-c-bg-soft: #1a1a1a;
+  --vp-c-bg-mute: #252525;
+}
+
+/* Hero section styling */
+.VPHero .name {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+.VPHero .tagline {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Code blocks */
+.vp-code-group .tabs label,
+.vp-code-group .blocks,
+div[class*='language-'] {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Tables - cleaner look */
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* Market status colors */
+.market-open {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.market-closed {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.market-soon {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+/* Screenshot placeholders */
+img[alt*="SCREENSHOT"] {
+  border: 2px dashed var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 2rem;
+  background: var(--vp-c-bg-soft);
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation improvements */
+.VPNavBarTitle .title {
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Sidebar styling */
+.VPSidebar .group {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Smaller images for specific screenshots */
+img[alt="Index Display"],
+img[alt="Mobile View"],
+img[alt="Mobile Responsive"],
+img[alt="Saudi Weekend"],
+img[alt="Favorite Button"],
+img[alt="Holiday Display"] {
+  max-width: 350px;
+  display: block;
+}
+
+/* Medium-sized images */
+img[alt="Exchange Card Anatomy"],
+img[alt="Proxy Badges"],
+img[alt="Trading Days Display"] {
+  max-width: 500px;
+  display: block;
+}
