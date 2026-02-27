@@ -4,6 +4,9 @@ export default defineConfig({
   title: "Trade Dialer Docs",
   description: "Documentation for Trade Dialer - track global stock market hours, timezones, holidays, and trading overlaps for NYSE, NASDAQ, LSE, and 17+ exchanges worldwide.",
 
+  // Base path for GitHub Pages subdirectory deployment
+  base: '/trade-dialer-docs/',
+
   head: [
     // JetBrains Mono font
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],

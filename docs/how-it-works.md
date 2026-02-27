@@ -106,8 +106,8 @@ Trade Dialer works on any screen size:
 <!-- SCREENSHOT: Phone showing responsive layout -->
 
 - **Phone:** Single-column layout, easy scrolling
-- **Tablet:** Two-column grid
-- **Desktop:** Multi-column grid with all markets visible
+- **Tablet:** Two-column grid or a custom grid setup, max 5
+- **Desktop:** Multi-column grid with all markets visible, custom grid setup, max 5
 
 ## Tips for Using Trade Dialer
 
