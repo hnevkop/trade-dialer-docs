@@ -79,6 +79,12 @@ For each exchange, we show the primary stock index:
 
 Index data updates every 5 minutes during trading hours. You'll see a subtle indicator if data is older than expected.
 
+### Live Index Fallback
+
+When US markets are closed but foreign markets are open, Trade Dialer automatically switches to live index data from Yahoo Finance. You'll see a blue **Index Live** indicator instead of green.
+
+Learn more: [Data Sources & Fallback](data-sources.md)
+
 ## Data Transparency
 
 Trade Dialer is transparent about where our data comes from. You may notice small badges next to some indices:

@@ -61,6 +61,7 @@ export default defineConfig({
         items: [
           { text: 'Introduction', link: '/' },
           { text: 'How It Works', link: '/how-it-works' },
+          { text: 'Data Sources & Fallback', link: '/data-sources' },
           { text: 'Markets Directory', link: '/markets-directory' }
         ]
       },
