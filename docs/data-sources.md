@@ -89,9 +89,6 @@ When viewing fallback data, you'll notice:
 3. **Blue "Index Live" indicator** — Shows data is from the local market
 4. **Yahoo Finance link** — Click to verify the source
 
-![Fallback Data Display](/images/fallback-display.png)
-<!-- SCREENSHOT: Card showing Nikkei with Index Live indicator and JPY value -->
-
 ## Indices Without Fallback
 
 Some indices don't have reliable Yahoo Finance data:
