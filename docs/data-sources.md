@@ -4,14 +4,29 @@ Trade Dialer uses a smart hybrid data system to provide the most relevant market
 
 ## How Our Data Works
 
-### Primary Source: US-Listed ETF Proxies
+### Primary Source: ETF Proxies via Twelve Data
 
-For most index data, we use US-listed ETFs that track foreign indices. For example:
-- **EWJ** tracks the Nikkei 225 (Japan)
-- **EWH** tracks the Hang Seng (Hong Kong)
-- **EWY** tracks the KOSPI (South Korea)
+For most index data, we use ETFs that provide live minute-by-minute data via Twelve Data. We use three types of proxies:
 
-These ETFs trade on US exchanges during US market hours (09:30–16:00 ET).
+| Proxy Type | Description | Example |
+|------------|-------------|---------|
+| **ETF_TRACKER** | Direct ETF that tracks the index | SPY tracks S&P 500, DIA tracks Dow Jones |
+| **MSCI_PROXY** | iShares MSCI country ETF | EWJ (MSCI Japan) proxies for Nikkei 225 |
+| **REGIONAL_PROXY** | Regional/sector ETF | FXI (China Large-Cap) proxies for SSE Composite |
+
+Most proxies are US-listed ETFs that trade during US market hours (09:30–16:00 ET). However, some local ETFs trade on their home exchanges:
+- **NIFTYBEES** / **SENSEXBEES** — Trade on NSE/BSE during Mumbai hours
+- **BOVA11** — Trades on Bovespa during São Paulo hours
+
+### Proxy Quality Tiers
+
+Each proxy is rated by how closely it tracks the actual index:
+
+| Tier | Quality | Description |
+|------|---------|-------------|
+| **A** | Excellent | Direct ETF tracker or highly correlated MSCI proxy |
+| **B** | Good | Country-level MSCI ETF, good correlation |
+| **C** | Approximate | Regional proxy, broader correlation |
 
 ### The Challenge
 
@@ -41,44 +56,62 @@ Trade Dialer clearly shows where your data is coming from:
 | ⚪ **At close** (gray) | Last session's closing price |
 | 🇺🇸 **Closed** (gray badge) | US market closed, showing last ETF price |
 
-## Supported Indices with Fallback
+## Complete Symbol Reference
 
-The following indices have Yahoo Finance fallback enabled:
-
-### Asia-Pacific
-
-| Index | Local Currency | Local Hours |
-|-------|---------------|-------------|
-| Nikkei 225 (Japan) | JPY | Tokyo hours |
-| TOPIX (Japan) | JPY | Tokyo hours |
-| Hang Seng (Hong Kong) | HKD | Hong Kong hours |
-| HSCEI (Hong Kong) | HKD | Hong Kong hours |
-| KOSPI (South Korea) | KRW | Seoul hours |
-| KOSDAQ (South Korea) | KRW | Seoul hours |
-| TAIEX (Taiwan) | TWD | Taipei hours |
-| SSE Composite (China) | CNY | Shanghai hours |
-| SZSE Component (China) | CNY | Shenzhen hours |
-| STI (Singapore) | SGD | Singapore hours |
-| ASX 200 (Australia) | AUD | Sydney hours |
-
-### Europe & Middle East
-
-| Index | Local Currency | Local Hours |
-|-------|---------------|-------------|
-| SMI (Switzerland) | CHF | Zurich hours |
-| TASI (Saudi Arabia) | SAR | Riyadh hours |
+Below is the complete list of all indices tracked by Trade Dialer, including their proxy symbols, data quality tiers, and fallback sources.
 
 ### Americas
 
-| Index | Local Currency | Local Hours |
-|-------|---------------|-------------|
-| IPC (Mexico) | MXN | Mexico City hours |
+| Index | Proxy Symbol | Tier | Type | Currency | Fallback |
+|-------|-------------|------|------|----------|----------|
+| S&P 500 | SPY | A | ETF_TRACKER | USD | ^GSPC |
+| Dow Jones | DIA | A | ETF_TRACKER | USD | ^DJI |
+| NASDAQ-100 | QQQ | A | ETF_TRACKER | USD | ^NDX |
+| S&P/TSX Composite | EWC | A | MSCI_PROXY | USD | ^GSPTSE |
+| S&P/TSX 60 | EWC | B | MSCI_PROXY | USD | ^GSPTSE |
+| IPC (Mexico) | EWW | B | REGIONAL_PROXY | USD | ^MXX |
+| Bovespa | BOVA11 | A | ETF_TRACKER | BRL | ^BVSP |
+
+### Europe
+
+| Index | Proxy Symbol | Tier | Type | Currency | Fallback |
+|-------|-------------|------|------|----------|----------|
+| FTSE 100 | EWU | A | MSCI_PROXY | USD | ^FTSE |
+| FTSE 250 | EWU | B | MSCI_PROXY | USD | ^FTMC |
+| DAX | EWG | A | MSCI_PROXY | USD | ^GDAXI |
+| MDAX | EWG | B | MSCI_PROXY | USD | ^MDAXI |
+| CAC 40 | EWQ | A | MSCI_PROXY | USD | ^FCHI |
+| AEX | EWN | A | MSCI_PROXY | USD | ^AEX |
+| FTSE MIB | EWI | A | MSCI_PROXY | USD | FTSEMIB.MI |
+| IBEX 35 | EWP | B | MSCI_PROXY | USD | ^IBEX |
+| SMI | EWL | B | MSCI_PROXY | USD | ^SSMI |
+| SMIM | EWL | B | MSCI_PROXY | USD | — |
+| BIST 100 | TUR | B | MSCI_PROXY | USD | XU100.IS |
+
+### Asia-Pacific
+
+| Index | Proxy Symbol | Tier | Type | Currency | Fallback |
+|-------|-------------|------|------|----------|----------|
+| Nikkei 225 | EWJ | B | MSCI_PROXY | USD | ^N225 |
+| TOPIX | EWJ | B | MSCI_PROXY | USD | — |
+| Hang Seng | EWH | A | MSCI_PROXY | USD | ^HSI |
+| HSCEI | EWH | C | MSCI_PROXY | USD | ^HSCE |
+| SSE Composite | FXI | C | REGIONAL_PROXY | USD | 000001.SS |
+| SZSE Component | ASHR | C | REGIONAL_PROXY | USD | 399001.SZ |
+| KOSPI | EWY | B | MSCI_PROXY | USD | ^KS11 |
+| KOSDAQ | EWY | B | MSCI_PROXY | USD | ^KQ11 |
+| TAIEX | EWT | B | MSCI_PROXY | USD | ^TWII |
+| STI (Singapore) | EWS | B | MSCI_PROXY | USD | ^STI |
+| ASX 200 | EWA | A | MSCI_PROXY | USD | ^AXJO |
+| NIFTY 50 | NIFTYBEES | A | ETF_TRACKER | INR | ^NSEI |
+| SENSEX | SENSEXBEES | A | ETF_TRACKER | INR | ^BSESN |
+| TASI (Saudi Arabia) | KSA | B | MSCI_PROXY | USD | ^TASI.SR |
 
 ### Africa
 
-| Index | Local Currency | Local Hours |
-|-------|---------------|-------------|
-| JSE All Share (South Africa) | ZAR | Johannesburg hours |
+| Index | Proxy Symbol | Tier | Type | Currency | Fallback |
+|-------|-------------|------|------|----------|----------|
+| JSE All Share | EZA | B | MSCI_PROXY | USD | ^J203.JO |
 
 ## What You See With Fallback Data
 
@@ -91,12 +124,24 @@ When viewing fallback data, you'll notice:
 
 ## Indices Without Fallback
 
-Some indices don't have reliable Yahoo Finance data:
+Some indices don't have reliable Yahoo Finance data (marked with "—" in the tables above):
 
 - **TOPIX** — No Yahoo Finance feed available
 - **SMIM** — No Yahoo Finance feed available
 
 For these indices, when the US market is closed, you'll see the 🇺🇸 **Closed** badge indicating the data is from the last US trading session.
+
+## Local ETF Trackers
+
+Some indices use ETFs that trade on their local exchanges instead of US markets:
+
+| Index | ETF | Exchange | Trading Hours |
+|-------|-----|----------|---------------|
+| NIFTY 50 | NIFTYBEES | NSE (India) | Mumbai hours (IST) |
+| SENSEX | SENSEXBEES | BSE (India) | Mumbai hours (IST) |
+| Bovespa | BOVA11 | Bovespa (Brazil) | São Paulo hours (BRT) |
+
+These ETFs provide live data during their local market hours, not US hours.
 
 ## Benefits of This System
 
