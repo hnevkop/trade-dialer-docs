@@ -218,4 +218,4 @@ A: This is the natural "end of day" globally. Futures markets continue trading, 
 
 ---
 
-Back to: [Home](/) | Previous: [Market Holidays](holidays.md)
+Back to: [Home](/) | Previous: [Early Close Days](early-closes.md)

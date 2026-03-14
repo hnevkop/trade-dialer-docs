@@ -32,7 +32,7 @@ US markets close for 10 holidays per year:
 | November 26 | Thanksgiving Day |
 | December 25 | Christmas Day |
 
-**Note:** US markets also have early closes (1:00 PM) on the day after Thanksgiving and Christmas Eve, but remain open for trading.
+**Note:** US markets also have early closes (1:00 PM) on the day after Thanksgiving and Christmas Eve. See [Early Close Days](early-closes.md) for details.
 
 ### Canada (TSX)
 
@@ -249,4 +249,4 @@ A: We update holiday calendars annually based on official exchange announcements
 
 ---
 
-Next: [Trading Hours & Market Overlaps](market-hours.md)
+Next: [Early Close Days](early-closes.md) | See also: [Trading Hours & Market Overlaps](market-hours.md)

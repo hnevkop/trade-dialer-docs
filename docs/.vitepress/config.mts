@@ -70,6 +70,7 @@ export default defineConfig({
         items: [
           { text: 'Global Timezones', link: '/timezones' },
           { text: 'Market Holidays', link: '/holidays' },
+          { text: 'Early Close Days', link: '/early-closes' },
           { text: 'Trading Hours & Overlaps', link: '/market-hours' }
         ]
       }
