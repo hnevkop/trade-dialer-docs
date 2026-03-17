@@ -10,7 +10,7 @@ Trade Dialer helps you track when stock markets around the world open and close.
 
 - **Live market status** — See which markets are open, closing soon, or closed
 - **Real-time countdowns** — Know exactly when a market opens or closes
-- **Index values** — Track major indices like S&P 500, DAX, Nikkei 225 (updated every 5 minutes)
+- **Index values** — Track major indices like S&P 500, DAX, Nikkei 225 (updated every 10 seconds for open markets)
 - **Holiday calendars** — Never be surprised by a closed market
 
 ## Supported Markets
