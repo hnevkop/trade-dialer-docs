@@ -14,7 +14,7 @@ Visit [trade-dialer.com/markets](https://www.trade-dialer.com/markets) to see al
 
 ### What You'll Find
 
-The directory organizes all 17+ exchanges into three regions:
+The directory organizes all 25 exchanges into three regions:
 
 - **Americas** — NYSE, NASDAQ, TSX, BMV, B3
 - **Europe & Africa** — LSE, XETRA, Euronext, and more

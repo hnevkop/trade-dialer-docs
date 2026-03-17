@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Trade Dialer"
   text: "Global Stock Market Tracker"
-  tagline: Live market status, countdowns, and index values for 17+ exchanges worldwide
+  tagline: Live market status, countdowns, and index values for 20+ exchanges worldwide
   image:
     src: /trade-dialer.png
     alt: Trade Dialer
@@ -22,7 +22,7 @@ hero:
 features:
   - icon: 🌍
     title: Global Coverage
-    details: Track 36 indices across NYSE, NASDAQ, LSE, XETRA, Tokyo, Hong Kong, and more
+    details: Track 33 indices across NYSE, NASDAQ, LSE, XETRA, Tokyo, Hong Kong, and more
   - icon: ⏱️
     title: Real-Time Countdowns
     details: Know exactly when markets open and close with live countdown timers
@@ -48,7 +48,7 @@ Trade Dialer helps you track when stock markets around the world open and close.
 
 ## Supported Markets
 
-Trade Dialer tracks **36 indices** across **17+ exchanges** worldwide:
+Trade Dialer tracks **33 indices** across **25 exchanges** worldwide:
 
 ### Americas
 - **USA:** S&P 500, Dow Jones, NASDAQ-100
