@@ -77,7 +77,7 @@ For each exchange, we show the primary stock index:
 
 ### Data Freshness
 
-Index data updates every 5 minutes during trading hours. You'll see a subtle indicator if data is older than expected.
+Index data updates every 10 seconds for open markets (including those closing soon) and markets opening soon. Closed markets refresh every 5 minutes. When a market is closed, values shown are the last regular session closing price — extended hours data is not included.
 
 ### Live Index Fallback
 
@@ -142,10 +142,13 @@ A: Trade Dialer converts all times to your local timezone. If you're in London l
 A: It's likely a holiday. Check the holiday name displayed on the card.
 
 **Q: How often does the data update?**
-A: Countdown timers update every second. Index values update every 5 minutes during market hours.
+A: Countdown timers update every second. Open markets (active and closes-soon) and markets opening soon refresh every 10 seconds. Closed markets refresh every 5 minutes.
 
 **Q: Is this data real-time?**
-A: Index data is near-real-time (5-minute delay). Countdown timers are real-time.
+A: Index data is near-real-time with a 10-second refresh for open markets. Countdown timers are real-time.
+
+**Q: What values are shown when a market is closed?**
+A: Values shown are the last regular session closing price. Extended hours data (pre-market and after-hours trading) is not included. Minor post-close corrections may occasionally update during the 5-minute refresh cycle.
 
 ---
 

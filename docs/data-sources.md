@@ -4,9 +4,9 @@ Trade Dialer uses a smart hybrid data system to provide the most relevant market
 
 ## How Our Data Works
 
-### Primary Source: ETF Proxies via Twelve Data
+### Primary Source: ETF Proxies via Twelve Data & Alpha Vantage
 
-For most index data, we use ETFs that provide live minute-by-minute data via Twelve Data. We use three types of proxies:
+Market data is powered by Twelve Data and Alpha Vantage APIs through a backend proxy that handles caching, rate limiting, and symbol deduplication. We use three types of proxies:
 
 | Proxy Type | Description | Example |
 |------------|-------------|---------|
@@ -140,9 +140,16 @@ For these indices, when the US market is closed, you'll see the 🇺🇸 **Close
 
 | Data Type | Update Frequency |
 |-----------|-----------------|
-| ETF prices (US hours) | Every 5 minutes |
-| Index fallback (local hours) | Every 5 minutes |
-| Market status | Real-time |
+| Open markets (active + closes-soon) | Every 10 seconds |
+| Markets opening soon | Every 10 seconds |
+| Closed markets | Every 5 minutes |
+| Market open/close countdowns | Every second |
+
+### When Markets Are Closed
+
+When a market is closed, the values shown are the **last regular session closing price**. Extended hours data (pre-market and after-hours trading) is not included.
+
+Minor post-close corrections (e.g., settlement adjustments) may occasionally update slightly during the 5-minute refresh cycle for closed markets.
 
 ---
 
