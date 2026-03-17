@@ -27,7 +27,7 @@ US markets close for 10 holidays per year:
 | April 3 | Good Friday |
 | May 25 | Memorial Day |
 | June 19 | Juneteenth |
-| July 4 | Independence Day |
+| July 3 | Independence Day (observed) |
 | September 7 | Labor Day |
 | November 26 | Thanksgiving Day |
 | December 25 | Christmas Day |
@@ -41,6 +41,7 @@ US markets close for 10 holidays per year:
 | January 1 | New Year's Day |
 | February 16 | Family Day |
 | April 3 | Good Friday |
+| April 6 | Easter Monday |
 | May 18 | Victoria Day |
 | July 1 | Canada Day |
 | August 3 | Civic Holiday |
@@ -60,7 +61,7 @@ US markets close for 10 holidays per year:
 | May 25 | Spring Bank Holiday |
 | August 31 | Summer Bank Holiday |
 | December 25 | Christmas Day |
-| December 26 | Boxing Day |
+| December 28 | Boxing Day (substitute) |
 
 ### Germany (XETRA)
 
@@ -80,19 +81,26 @@ Japan has one of the most extensive holiday calendars:
 
 | Date (2026) | Holiday |
 |-------------|---------|
-| January 1-3 | New Year Holidays |
+| January 1 | New Year's Day |
+| January 2 | Bank Holiday |
+| January 3 | New Year Holiday |
 | January 12 | Coming of Age Day |
 | February 11 | National Foundation Day |
 | February 23 | Emperor's Birthday |
-| March 21 | Vernal Equinox Day |
+| March 20 | Vernal Equinox Day |
 | April 29 | Showa Day |
-| May 3-5 | Constitution Day, Greenery Day, Children's Day (Golden Week) |
+| May 4 | Greenery Day |
+| May 5 | Children's Day |
+| May 6 | Constitution Memorial Day (observed) |
 | July 20 | Marine Day |
 | August 11 | Mountain Day |
-| September 21-23 | Respect for Aged Day, Autumnal Equinox |
-| October 12 | Sports Day |
+| September 21 | Respect for the Aged Day |
+| September 22 | National Holiday |
+| September 23 | Autumnal Equinox Day |
+| October 12 | Health and Sports Day |
 | November 3 | Culture Day |
 | November 23 | Labor Thanksgiving Day |
+| December 31 | New Year's Eve |
 
 **Golden Week:** Late April/Early May sees multiple consecutive holidays, creating an extended break.
 
@@ -100,15 +108,15 @@ Japan has one of the most extensive holiday calendars:
 
 Chinese markets have extended closures for major holidays:
 
-| Period (2026) | Holiday | Duration |
-|---------------|---------|----------|
-| January 1 | New Year's Day | 1 day |
-| February 16-22 | Spring Festival (Chinese New Year) | **7 days** |
-| April 5 | Qingming Festival | 1 day |
-| May 1 | Labour Day | 1 day |
-| May 29 | Dragon Boat Festival | 1 day |
-| September 6 | Mid-Autumn Festival | 1 day |
-| October 1-7 | National Day | **7 days** |
+| Date (2026) | Holiday |
+|-------------|---------|
+| January 1-2 | New Year's Day |
+| February 16-20, 23 | Spring Festival (Chinese New Year) |
+| April 6 | Qingming Festival |
+| May 1, 4-5 | Labour Day |
+| June 19 | Dragon Boat Festival |
+| September 25 | Mid-Autumn Festival |
+| October 1-2, 5-7 | National Day |
 
 **Important:** Chinese New Year and National Day create week-long market closures. Plan accordingly!
 
@@ -118,14 +126,18 @@ Chinese markets have extended closures for major holidays:
 |-------------|---------|
 | January 1 | New Year's Day |
 | February 17-19 | Lunar New Year |
-| April 3-6 | Good Friday to Easter Monday |
-| April 5 | Ching Ming Festival |
+| April 3 | Good Friday |
+| April 4 | Day following Good Friday |
+| April 6 | Ching Ming Festival |
 | May 1 | Labour Day |
-| May 29 | Dragon Boat Festival |
+| May 25 | Buddha's Birthday |
+| June 19 | Tuen Ng Festival |
 | July 1 | HKSAR Establishment Day |
-| September 6 | Mid-Autumn Festival |
+| September 26 | Day following Mid-Autumn Festival |
 | October 1 | National Day |
-| December 25-26 | Christmas |
+| October 19 | Chung Yeung Festival |
+| December 25 | Christmas Day |
+| December 26 | Christmas Day (observed) |
 
 ### India (NSE, BSE)
 
@@ -134,27 +146,31 @@ Indian markets observe both national and religious holidays:
 | Date (2026) | Holiday |
 |-------------|---------|
 | January 26 | Republic Day |
-| February 24 | Maha Shivaratri |
-| March 16 | Holi |
-| March 31 | Eid-ul-Fitr |
-| April 7 | Ram Navami |
+| March 3 | Holi |
+| March 26 | Shri Ram Navami |
+| March 31 | Shri Mahavir Jayanti |
+| April 3 | Good Friday |
+| April 14 | Dr. Baba Saheb Ambedkar Jayanti |
 | May 1 | Maharashtra Day |
-| June 5 | Bakri Eid |
-| August 15 | Independence Day |
-| August 28 | Ganesh Chaturthi |
-| October 2 | Gandhi Jayanti |
-| October 21 | Diwali |
-| December 25 | Christmas Day |
+| May 28 | Bakri Id / Eid ul-Adha |
+| June 26 | Muharram |
+| September 14 | Ganesh Chaturthi |
+| October 2 | Mahatma Gandhi Jayanti |
+| October 20 | Dussehra |
+| November 10 | Diwali - Balipratipada |
+| November 24 | Guru Nanak Jayanti |
+| December 25 | Christmas |
 
 **Note:** Many Indian holidays follow the lunar calendar and shift each year.
 
 ### Saudi Arabia (Tadawul)
 
-| Period (2026) | Holiday |
-|---------------|---------|
-| February 11 | Founding Day |
-| March 30 - April 2 | Eid al-Fitr (4 days) |
-| June 3-7 | Arafat Day + Eid al-Adha (5 days) |
+| Date (2026) | Holiday |
+|-------------|---------|
+| February 22 | Founding Day |
+| March 16-19 | Eid al-Fitr |
+| May 25 | Arafat Day |
+| May 26-28, 31 | Eid al-Adha |
 | September 23 | National Day |
 
 **Remember:** Tadawul trades Sunday-Thursday, not Monday-Friday.
@@ -167,10 +183,44 @@ Indian markets observe both national and religious holidays:
 | January 26 | Australia Day |
 | April 3 | Good Friday |
 | April 6 | Easter Monday |
-| April 25 | Anzac Day |
 | June 8 | King's Birthday |
 | December 25 | Christmas Day |
 | December 26 | Boxing Day |
+| December 28 | Boxing Day (observed) |
+
+### South Korea (KRX)
+
+| Date (2026) | Holiday |
+|-------------|---------|
+| January 1 | New Year's Day |
+| February 16-18 | Seollal (Lunar New Year) |
+| March 2 | Independence Movement Day (observed) |
+| May 1 | Labor Day |
+| May 5 | Children's Day |
+| May 25 | Buddha's Birthday |
+| August 17 | Liberation Day (observed) |
+| September 24-25 | Chuseok |
+| October 5 | National Foundation Day (observed) |
+| October 9 | Hangeul Day |
+| December 25 | Christmas Day |
+| December 31 | Year-end closing |
+
+### Brazil (B3)
+
+| Date (2026) | Holiday |
+|-------------|---------|
+| January 1 | New Year's Day |
+| February 16-17 | Carnival |
+| April 3 | Good Friday |
+| April 21 | Tiradentes Day |
+| May 1 | Labor Day |
+| June 4 | Corpus Christi |
+| September 7 | Independence Day |
+| October 12 | Our Lady of Aparecida |
+| November 2 | All Souls Day |
+| November 20 | Black Consciousness Day |
+| December 25 | Christmas Day |
+| December 31 | New Year's Eve |
 
 ## Types of Holidays
 

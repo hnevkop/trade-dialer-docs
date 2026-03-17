@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: Open Trade Dialer
       link: https://www.trade-dialer.com
+    - theme: alt
+      text: Markets Directory
+      link: https://www.trade-dialer.com/markets
 
 features:
   - icon: 🌍

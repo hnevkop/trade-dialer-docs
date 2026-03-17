@@ -14,9 +14,7 @@ For most index data, we use ETFs that provide live minute-by-minute data via Twe
 | **MSCI_PROXY** | iShares MSCI country ETF | EWJ (MSCI Japan) proxies for Nikkei 225 |
 | **REGIONAL_PROXY** | Regional/sector ETF | FXI (China Large-Cap) proxies for SSE Composite |
 
-Most proxies are US-listed ETFs that trade during US market hours (09:30–16:00 ET). However, some local ETFs trade on their home exchanges:
-- **NIFTYBEES** / **SENSEXBEES** — Trade on NSE/BSE during Mumbai hours
-- **BOVA11** — Trades on Bovespa during São Paulo hours
+All proxies are US-listed ETFs that trade during US market hours (09:30–16:00 ET).
 
 ### Proxy Quality Tiers
 
@@ -70,7 +68,7 @@ Below is the complete list of all indices tracked by Trade Dialer, including the
 | S&P/TSX Composite | EWC | A | MSCI_PROXY | USD | ^GSPTSE |
 | S&P/TSX 60 | EWC | B | MSCI_PROXY | USD | ^GSPTSE |
 | IPC (Mexico) | EWW | B | REGIONAL_PROXY | USD | ^MXX |
-| Bovespa | BOVA11 | A | ETF_TRACKER | BRL | ^BVSP |
+| Bovespa | EWZ | A | MSCI_PROXY | USD | ^BVSP |
 
 ### Europe
 
@@ -103,8 +101,8 @@ Below is the complete list of all indices tracked by Trade Dialer, including the
 | TAIEX | EWT | B | MSCI_PROXY | USD | ^TWII |
 | STI (Singapore) | EWS | B | MSCI_PROXY | USD | ^STI |
 | ASX 200 | EWA | A | MSCI_PROXY | USD | ^AXJO |
-| NIFTY 50 | NIFTYBEES | A | ETF_TRACKER | INR | ^NSEI |
-| SENSEX | SENSEXBEES | A | ETF_TRACKER | INR | ^BSESN |
+| NIFTY 50 | INDA | A | MSCI_PROXY | USD | ^NSEI |
+| SENSEX | INDA | A | MSCI_PROXY | USD | ^NSEI |
 | TASI (Saudi Arabia) | KSA | B | MSCI_PROXY | USD | ^TASI.SR |
 
 ### Africa
@@ -130,18 +128,6 @@ Some indices don't have reliable Yahoo Finance data (marked with "—" in the ta
 - **SMIM** — No Yahoo Finance feed available
 
 For these indices, when the US market is closed, you'll see the 🇺🇸 **Closed** badge indicating the data is from the last US trading session.
-
-## Local ETF Trackers
-
-Some indices use ETFs that trade on their local exchanges instead of US markets:
-
-| Index | ETF | Exchange | Trading Hours |
-|-------|-----|----------|---------------|
-| NIFTY 50 | NIFTYBEES | NSE (India) | Mumbai hours (IST) |
-| SENSEX | SENSEXBEES | BSE (India) | Mumbai hours (IST) |
-| Bovespa | BOVA11 | Bovespa (Brazil) | São Paulo hours (BRT) |
-
-These ETFs provide live data during their local market hours, not US hours.
 
 ## Benefits of This System
 

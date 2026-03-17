@@ -22,6 +22,26 @@ The directory organizes all 17+ exchanges into three regions:
 
 Click any market to go directly to its dedicated status page.
 
+### 24-Hour Trading Timeline
+
+The Markets Directory features an interactive timeline showing when all markets are open throughout a 24-hour UTC day.
+
+![Markets Timeline](/images/markets-timeline.png)
+<!-- SCREENSHOT: 24-hour trading timeline showing all markets -->
+
+**Timeline Features:**
+- **Visual trading hours** — See each market's trading session as a colored bar
+- **Regional color coding** — Asia-Pacific (green), Europe & Africa (purple), Americas (blue)
+- **Current time indicator** — Red vertical line shows your current time
+- **Lunch breaks** — Yellow segments show markets with lunch breaks (e.g., Tokyo, Hong Kong)
+- **UTC reference** — Hours displayed in UTC for easy global comparison
+- **Quick links** — Click any market to view its dedicated status page
+
+The timeline helps you quickly identify:
+- Which markets are currently open
+- Market session overlaps (busiest trading periods)
+- When your target market opens relative to others
+
 ### Quick Navigation
 
 Use these direct links to jump to a region:
